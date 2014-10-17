@@ -126,6 +126,16 @@ class GoogleAuthenticator {
 	}
 
 	/**
+	 * Set the auth secret
+	 *
+	 * @param string $authSecret
+	 */
+	public function setAuthSecret($authSecret)
+	{
+		$this->authSecret = $authSecret;
+	}
+
+	/**
 	 * Calculate the code, with given secret and point in time
 	 *
 	 * @param string   $secret
