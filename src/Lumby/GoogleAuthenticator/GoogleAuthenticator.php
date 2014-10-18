@@ -149,7 +149,7 @@ class GoogleAuthenticator {
 			$timeSlice = floor(time() / 30);
 		}
 
-		$secretkey = $this->_base32Decode($secret);
+		$secretkey = (new Base32)->_base32Decode($secret);
 
 		// Pack time into binary string
 		$time = chr(0) . chr(0) . chr(0) . chr(0) . pack('N*', $timeSlice);
