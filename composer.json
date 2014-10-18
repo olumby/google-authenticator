@@ -5,8 +5,12 @@
         {
             "name": "Oliver Lumby",
             "email": "me@oliverlumby.com"
-        }
+        },
+		{
+			"name": "Michael Kliewe"
+		}
     ],
+	"license": "BSD-2-Clause",
     "require": {
         "php": ">=5.4.0",
 		"illuminate/support": "~5.0"

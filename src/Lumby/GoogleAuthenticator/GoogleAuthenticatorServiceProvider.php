@@ -1,5 +1,21 @@
 <?php namespace Lumby\GoogleAuthenticator;
 
+/**
+ * PHP Class for handling Google Authenticator 2-factor authentication
+ *
+ * @author    Michael Kliewe
+ * @copyright 2012 Michael Kliewe
+ * @license   http://www.opensource.org/licenses/bsd-license.php BSD License
+ * @link      http://www.phpgangsta.de/
+ *
+ *
+ * Copyright 2014 Oliver Lumby
+ *
+ * - Added options for issuer in QRCode URL generator.
+ * - Renamed some methods for better readability.
+ *
+ */
+
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
