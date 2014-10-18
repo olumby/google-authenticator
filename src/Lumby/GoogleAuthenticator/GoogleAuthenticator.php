@@ -115,7 +115,7 @@ class GoogleAuthenticator {
 
 		for ($i = - $discrepancy; $i <= $discrepancy; $i ++)
 		{
-			$calculatedCode = $this->generateCode($this->secret, $currentTimeSlice + $i);
+			$calculatedCode = $this->generateCode($this->authSecret, $currentTimeSlice + $i);
 			if ($calculatedCode == $code)
 			{
 				return true;
