@@ -71,14 +71,14 @@ class GoogleAuthenticator {
 	 *
 	 * @param string $name
 	 * @param string $issuer
-	 * @internal param string $secret
+	 * @param string $size
 	 * @return string
 	 */
-	public function generateGoogleChartQr($name, $issuer = '')
+	public function generateGoogleChartQr($name, $issuer = '', $size = '200')
 	{
 		$urlencoded = $this->generateQrUrl($name, $issuer);
 
-		return 'https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=' . $urlencoded . '';
+		return 'https://chart.googleapis.com/chart?chs=' . $size . 'x' . $size . '&chld=M|0&cht=qr&chl=' . $urlencoded . '';
 	}
 
 	/**
